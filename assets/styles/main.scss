@@ -39,6 +39,12 @@
 @include foundation-top-bar;
 @include foundation-visibility-classes;
 @include foundation-float-classes;
-@include foundation-flex-classes;
+@include foundation-xy-grid-classes;
 
-//$maincolor: {{ site.main_color }};
+.homepage { 
+  background: url(/assets/images/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
