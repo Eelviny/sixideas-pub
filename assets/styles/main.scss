@@ -42,7 +42,7 @@
 @include foundation-xy-grid-classes;
 
 .homepage { 
-  background: url(/assets/images/background.jpg) no-repeat center center fixed; 
+  background: url({{ site.url }}{{ site.baseurl }}/assets/images/background.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
