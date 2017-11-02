@@ -1,0 +1,19 @@
+<div id="menu-bar">
+  <div class="row">
+    <div class="small-12 medium-4 columns">
+      <a href="/"><h1 class="white" style="font-size: 150%"><img src="/assets/images/iconpurple256.png" alt="Site logo" style="width:25px; height:25px" />  {{ site.title }}</h1></a>
+    </div>
+    <div class="small-12 medium-8 columns">
+      <ul class="menu align-right show-for-medium">
+        {% for nav in site.data.nav %}
+        <li><a href="{{ nav.url }}" title="{{ nav.section }}"><i class="fa {{ nav.icon }}"></i> <span{% if page.section == nav.section %} class="currentpage"{% endif %}>{{ nav.section }}</span></a></li>
+        {% endfor %}
+      </ul>
+      <ul class="menu align-center show-for-small-only">
+        {% for nav in site.data.nav %}
+        <li><a href="{{ nav.url }}" title="{{ nav.section }}"><i class="fa fa-lg fa-fw {{ nav.icon }}"></i></a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
