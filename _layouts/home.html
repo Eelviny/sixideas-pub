@@ -5,54 +5,34 @@ layout: compress
 <!doctype html>
 <html class="no-js" lang="en">
   {% include head.html %}
-  <body>
-    <div class="grid-container grid-y large-grid-frame" style="background-color: blue;">
-      <div class="cell shrink show-for-small-only" style="background-color: green;">
+  <body class="homepage">
+    <div class="grid-container grid-y large-grid-frame">
+      <div class="cell shrink show-for-small-only">
         <img src="{{ site.url }}{{ site.baseurl }}/assets/images/iconpurple.svg" class="float-center" style="width: 128px; height: 128px;"/>
       </div>
-      <div class="cell shrink show-for-medium" style="background-color: green;">
+      <div class="cell shrink show-for-medium">
         <img src="{{ site.url }}{{ site.baseurl }}/assets/images/iconwhite.svg" style="width: 128px; height: 128px;"/>
       </div>
-      <div class="cell large-auto" style="background-color: gray;">
+      <div class="cell large-auto">
         <div class="grid-x grid-margin-x grid-padding-x">
           <div class="cell large-6">
-            <div class="grid-y grid-frame" style="background-color: cyan;">
-              <div class="cell medium-auto" style="background-color: pink;">
+            <div class="grid-y grid-frame">
+              <div class="cell medium-auto">
               </div>
-              <div class="cell" style="background-color: red;">
-                <p>{{ page.impact }}</p>
-                <p>{{ content }}</p>
+              <div class="cell">
+                <h2 id="impact"><strong>{{ page.impact }}</strong></h2>
+                <p class="lead">{{ content }}</p>
               </div>
-              <div class="cell medium-auto" style="background-color: pink;">
+              <div class="cell medium-auto">
               </div>
             </div>
           </div>
-          <div class="cell large-6" style="background-color: red;">
-            <h1>The Title</h1>
-            <label>
-              First name:
-              <input type="text" placeholder="First Name"></textarea>
-            </label>
-            <label>
-              Last name:
-              <input type="text" placeholder="Last Name"></textarea>
-            </label>
-            <label>
-              Email Address:
-              <input type="email" placeholder="Email Address"></textarea>
-            </label>
-            <div class="grid-x">
-              <div class="cell medium-8">
-                <p>I've already entered my details</p>
-              </div>
-              <div class="cell medium-4">
-                <a class="button large expanded" href="#">Go</a>
-              </div>
-            </div>
+          <div id=form1 class="cell large-6"  style="background-color: darkgray;">
+            {% include form.html %}
           </div>
         </div>
       </div>
-      <div class="cell shrink" style="background-color: green;">
+      <div class="cell shrink">
         {% include footer.html %}
       </div>
     </div>
