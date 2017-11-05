@@ -1,22 +1,29 @@
 <h1 class="text-center">{{ page.title }}</h1>
-<label>
-  First Name:
-  <input id="fname" type="text" placeholder="First Name">
-</label>
-<label>
-  Last Name:
-  <input id="lname" type="text" placeholder="Last Name">
-</label>
-<label>
-  Email Address:
-  <input id="eaddr" type="email" placeholder="Email Address">
-</label>
-<input id="checkboxaccept" type="checkbox" checked><label for="checkboxaccept">Please get in touch with me for more things like this</label>
-<div class="grid-x">
-  <div class="cell medium-8 align-self-bottom">
-    <p>I've already entered my details</p>
-  </div>
-  <div class="cell medium-4">
-    <a class="button large expanded" href="#">Go</a>
-  </div>
-</div>
+<form id="harvester" action="https://formspree.io/hello@six-ideas.com" method="POST">
+  <!-- TODO: Add validation to form -->
+  <fieldset>
+    <label>
+      First Name:
+      <input type="text" name="firstname" placeholder="First Name">
+    </label>
+    <label>
+      Last Name:
+      <input type="text" name="lastname" placeholder="Last Name">
+    </label>
+    <label>
+      Email Address:
+      <input type="email" name="email" placeholder="Email Address">
+    </label>
+    <input type="checkbox" name="contact" checked><label for="checkboxaccept">Please get in touch with me for more things like this</label>
+    <input type="text" name="_gotcha" style="display:none" />
+    <input type="hidden" name="_next" value="{{ site.url }}{{ site.baseurl }}/publication" />
+    <div class="grid-x">
+      <div class="cell medium-8 align-self-bottom">
+        <p>I've already entered my details</p>
+      </div>
+      <div class="cell medium-4">
+        <input type="submit" class="button large expanded" value="Go">
+      </div>
+    </div>
+  </fieldset>
+</form>
