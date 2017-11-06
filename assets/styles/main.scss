@@ -40,7 +40,7 @@
 @include foundation-float-classes;
 @include foundation-xy-grid-classes;
 
-.homepage { 
+body { 
   background: url({{ site.url }}{{ site.baseurl }}/assets/images/background.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
