@@ -4,8 +4,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 title: "An Exploration of the Future Workplace"
-impact1: "Smart Working on"
-impact2: "the Antipodes"
+impact: "Smart Working on the Antipodes"
 ---
 
 The walls have come down, literally and figuratively. In this space where people come together remarkable things happen. From fledgling concept to fully formed and flourishing; an exploration of the (future) workplace in Australia and New Zealand.
