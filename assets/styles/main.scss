@@ -51,6 +51,16 @@
 #harvester {
 }
 
-#impact {
+#subhead {
   text-transform: uppercase;
+}
+
+#impact {
+  span {
+    text-transform: uppercase;
+    background-color: $primary-color;
+    padding: 0.5rem;
+    line-height: 150%;
+    font-weight: bold;
+  }
 }
