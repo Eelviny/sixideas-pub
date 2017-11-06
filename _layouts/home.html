@@ -8,15 +8,21 @@
   <body class="homepage">
     <div class="grid-container grid-x grid-padding-x">
       <div class="cell medium-6 large-5">
-        <div class="grid-y large-grid-frame" style="height: 100vh;">
-          <div class="cell auto">
+        <div class="grid-y large-grid-frame" style="min-height: 100vh;">
+          <div class="cell shrink">
             <img src="{{ site.url }}{{ site.baseurl }}/assets/images/iconwhite.svg" style="width: 128px; height: 128px;"/>
+          </div>
+          <div class="cell auto">
           </div>
           <div id="impact" class="cell shrink">
             <h1><span>{{ page.impact }}</span></h1>
             <p class="lead">{{ content }}</p>
+            <img src="{{ site.url }}{{ site.baseurl }}/assets/images/firstpage.jpg">
           </div>
           <div class="cell auto">
+          </div>
+          <div class="cell shrink">
+            <p>DESIGN BY <a href="https://eelviny.me">EELVINY</a></p>
           </div>
         </div>
       </div>
@@ -24,7 +30,7 @@
         <div class="grid-y large-grid-frame">
           <div class="cell auto">
           </div>
-          <div class="cell shrink medium-cell-block-container" style="padding:1rem;">
+          <div class="cell shrink" style="padding:1rem;">
             {% include form.html %}
           </div>
           <div class="cell auto">
