@@ -1,28 +1,44 @@
 
-<h2 id="subhead" class="text-center h3">{{ page.title }}</h1>
-<form id="harvester" action="https://formspree.io/hello@six-ideas.com" method="POST">
-  <!-- TODO: Add validation to form -->
+<h2 id="subhead" class="text-center h3"><strong>{{ page.title }}</strong></h2>
+<form id="harvester" action="https://formspree.io/hello@six-ideas.com" method="POST" data-abide novalidate>
+  <div data-abide-error class="alert callout" style="display: none;">
+    <p><i class="fi-alert"></i> There are some errors in your form.</p>
+  </div>
   <fieldset>
-    <label>
-      First Name:
-      <input type="text" name="firstname" placeholder="First Name">
-    </label>
-    <label>
-      Last Name:
-      <input type="text" name="lastname" placeholder="Last Name">
-    </label>
-    <label>
-      Email Address:
-      <input type="email" name="email" placeholder="Email Address">
-    </label>
-    <input type="checkbox" name="contact" checked><label for="checkboxaccept">Yes, I’m happy to be contacted occasionally about similar topics</label>
-    <input type="text" name="_gotcha" style="display:none" />
-    <input type="hidden" name="_next" value="{{ site.url }}{{ site.baseurl }}/publication" />
-    <div class="grid-x align-bottom">
+    <div class="grid-x grid-margin-x">
+      <div class="cell">
+        <label>
+          First Name:
+          <input type="text" name="firstname" placeholder="First Name" required>
+        </label>
+      </div>
+      <div class="cell">
+        <label>
+          Last Name:
+          <input type="text" name="lastname" placeholder="Last Name" required>
+        </label>
+        </div>
+      <div class="cell">
+        <label>
+          Email Address:
+          <input type="email" name="email" placeholder="Email Address" pattern="email" required>
+        </label>
+      </div>
+      <div class="cell shrink">
+        <div class="switch">
+          <input class="switch-input" name="contact" id="contactSwitch" type="checkbox" checked>
+          <label class="switch-paddle" for="contactSwitch"></label>
+        </div>
+      </div>
+      <div class="cell medium-8 large-10">
+        <p style="font-size: 110%;">Yes, I’m happy to be contacted occasionally about similar topics</p>
+      </div>
+      <input type="text" name="_gotcha" style="display:none" />
+      <input type="hidden" name="_next" value="{{ site.url }}{{ site.baseurl }}/publication" />
       <div class="cell large-6">
       </div>
       <div class="cell large-6">
-        <input type="submit" class="button large expanded" value="ACCESS REPORT">
+        <input type="submit" class="button large expanded" value="ACCESS REPORT" style="font-weight: bold;">
       </div>
     </div>
   </fieldset>
