@@ -1,39 +1,35 @@
 ---
-layout: compress
+#layout: compress
 ---
 
 <!doctype html>
 <html class="no-js" lang="en">
   {% include head.html %}
   <body class="homepage">
-    <div class="grid-container grid-y large-grid-frame">
-      <div class="cell shrink show-for-small-only">
-        <img src="{{ site.url }}{{ site.baseurl }}/assets/images/iconpurple.svg" class="float-center" style="width: 128px; height: 128px;"/>
-      </div>
-      <div class="cell shrink show-for-medium">
-        <img src="{{ site.url }}{{ site.baseurl }}/assets/images/iconwhite.svg" style="width: 128px; height: 128px;"/>
-      </div>
-      <div class="cell large-auto">
-        <div class="grid-x grid-margin-x grid-padding-x">
-          <div class="cell large-6">
-            <div class="grid-y grid-frame">
-              <div class="cell medium-auto">
-              </div>
-              <div class="cell">
-                <h2 id="impact"><strong>{{ page.impact }}</strong></h2>
-                <p class="lead">{{ content }}</p>
-              </div>
-              <div class="cell medium-auto">
-              </div>
-            </div>
+    <div class="grid-container grid-x grid-padding-x">
+      <div class="cell medium-6 large-5">
+        <div class="grid-y large-grid-frame" style="height: 100vh;">
+          <div class="cell auto">
+            <img src="{{ site.url }}{{ site.baseurl }}/assets/images/iconwhite.svg" style="width: 128px; height: 128px;"/>
           </div>
-          <div id=form1 class="cell large-6"  style="background-color: darkgray;">
-            {% include form.html %}
+          <div class="cell shrink">
+            <h2 id="impact"><strong>{{ page.impact }}</strong></h2>
+            <p class="lead">{{ content }}</p>
+          </div>
+          <div class="cell auto">
           </div>
         </div>
       </div>
-      <div class="cell shrink">
-        {% include footer.html %}
+      <div class="cell medium-6 large-offset-1" style="background-color: #373A35;">
+        <div class="grid-y large-grid-frame">
+          <div class="cell auto">
+          </div>
+          <div class="cell shrink large-cell-block-container" style="padding:1rem;">
+            {% include form.html %}
+          </div>
+          <div class="cell auto">
+          </div>
+        </div>
       </div>
     </div>
     {% include scripts.html %}

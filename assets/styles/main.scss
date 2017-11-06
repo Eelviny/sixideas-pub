@@ -40,9 +40,6 @@
 @include foundation-float-classes;
 @include foundation-xy-grid-classes;
 
-$primary-color: #5BC1E8;
-$secondary-color: #5E269E;
-
 .homepage { 
   background: url({{ site.url }}{{ site.baseurl }}/assets/images/background.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -51,10 +48,7 @@ $secondary-color: #5E269E;
   background-size: cover;
 }
 
-#form1 {
-  h1 {
-    text-transform: uppercase;
-  }
+#harvester {
 }
 
 #impact {
