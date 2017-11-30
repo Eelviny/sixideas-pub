@@ -18,7 +18,7 @@ email: your-email@example.com
 description: "The walls have come down, literally and figuratively. In this space where people come together remarkable things happen. From fledgling concept to fully formed and flourishing; an exploration of the (future) workplace in Australia and New Zealand."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://six-ideas.info" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
+twitter_username: six_ideas
 github_username:  Eelviny
 main_color: '#5BC1E8'
 
